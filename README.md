@@ -1,16 +1,30 @@
-# React + Vite
+# 📦 InvenSpace — Inventory & Workspace Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Enterprise ERP system built for InfiSpark Technologies Internship (ISP-2026-6672)
 
-Currently, two official plugins are available:
+🔗 **Live:** https://inventory-manager-lovat.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React + Vite
+- Supabase (PostgreSQL + Auth)
+- Vercel (Deployment)
 
-## React Compiler
+## Features
+- 🔐 Secure login & registration with enterprise password validation
+- 📦 Inventory management (add, edit, delete items)
+- 🖥️ Workspace resource tracking with status badges
+- 🔒 Row Level Security (RLS) enabled on all tables
+- 🎨 Liquid glass UI with animated background
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Security
+- Supabase RLS — users only access their own data
+- Enterprise password policy (uppercase, lowercase, number, special character)
+- Environment variables for all sensitive keys
 
-## Expanding the ESLint configuration
+## Run Locally
+git clone https://github.com/Yahya-Bandarkar/inventory-manager.git
+npm install
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Developer
+**Yahya Zubair Bandarkar** — Mumbai University
