@@ -146,13 +146,27 @@ export default function Login() {
             </p>
           </div>
 
-          {error && (
-            <div style={{
-              background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.25)',
-              borderRadius: '12px', padding: '0.7rem 1rem',
-              marginBottom: '1.25rem', fontSize: '13px', color: '#dc2626'
-            }}>{error}</div>
-          )}
+                  {error && (
+                      <div style={{
+                          background: error.includes('confirmed') ? 'rgba(109,40,217,0.08)' : 'rgba(239,68,68,0.08)',
+                          border: `1px solid ${error.includes('confirmed') ? 'rgba(109,40,217,0.2)' : 'rgba(239,68,68,0.2)'}`,
+                          borderRadius: '12px', padding: '0.75rem 1rem',
+                          marginBottom: '1.25rem',
+                          display: 'flex', alignItems: 'flex-start', gap: '10px'
+                      }}>
+                          <span style={{ fontSize: '18px' }}>{error.includes('confirmed') ? '📧' : '⚠️'}</span>
+                          <div>
+                              <p style={{ fontSize: '13px', fontWeight: '600', color: error.includes('confirmed') ? '#6d28d9' : '#dc2626', margin: 0 }}>
+                                  {error.includes('confirmed') ? 'Please verify your email first' : 'Sign in failed'}
+                              </p>
+                              <p style={{ fontSize: '12px', color: 'rgba(60,60,120,0.6)', marginTop: '3px' }}>
+                                  {error.includes('confirmed')
+                                      ? 'A confirmation link was sent to your inbox. Please verify before signing in.'
+                                      : error}
+                              </p>
+                          </div>
+                      </div>
+                  )}
 
           <div style={{ marginBottom: '1rem' }}>
             <label>Email</label>
