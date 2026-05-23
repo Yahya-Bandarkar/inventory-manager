@@ -4,6 +4,7 @@ import { supabase } from './supabaseClient'
 import Login from './components/Login'
 import Register from './components/Register'
 import Dashboard from './components/Dashboard'
+import { AuthCallback } from './components/AuthCallback'
 
 function App() {
   const [session, setSession] = useState(null)
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={session ? <Navigate to="/dashboard" /> : <Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={session ? <Dashboard session={session} /> : <Navigate to="/" />} />
+        <Route path="/auth/callback" element={<AuthCallback />} />
       </Routes>
     </Router>
   )
