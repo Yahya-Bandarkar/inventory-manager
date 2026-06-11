@@ -15,6 +15,7 @@ Enterprise ERP system built for InfiSpark Technologies Internship (ISP-2026-6672
 - 🖥️ Workspace resource tracking with status badges
 - 🔒 Row Level Security (RLS) enabled on all tables
 - 🎨 Liquid glass UI with animated background
+- 📊 Real-time analytics dashboard with usage statistics
 
 ## Security
 - Supabase RLS — users only access their own data
