@@ -22,6 +22,7 @@ Enterprise ERP system built for InfiSpark Technologies Internship (ISP-2026-6672
 - Supabase RLS — users only access their own data
 - Enterprise password policy (uppercase, lowercase, number, special character)
 - Environment variables for all sensitive keys
+- Secure authentication and authorization using Supabase Auth
 
 ## Run Locally
 git clone https://github.com/Yahya-Bandarkar/inventory-manager.git
