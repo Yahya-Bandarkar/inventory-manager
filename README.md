@@ -17,7 +17,7 @@ Enterprise ERP system built for InfiSpark Technologies Internship (ISP-2026-6672
 - 🎨 Liquid glass UI with animated background
 - 📊 Real-time analytics dashboard with usage statistics
 - 📁 Category-based inventory organization
-
+- 📱 Fully responsive design for mobile and desktop
 
 ## Security
 - Supabase RLS — users only access their own data
