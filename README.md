@@ -16,7 +16,7 @@ Enterprise ERP system built for InfiSpark Technologies Internship (ISP-2026-6672
 - 🔒 Row Level Security (RLS) enabled on all tables
 - 🎨 Liquid glass UI with animated background
 - 📊 Real-time analytics dashboard with usage statistics
-- 📁 Category-based inventory organization
+
 
 
 ## Security
